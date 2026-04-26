@@ -550,22 +550,3 @@ db.collection.find({...}).explain("executionStats")
 ## Conclusion
 
 The key takeaway from this practical is that **schema design and index design are not separate concerns** — they must be planned together around the queries the application will actually run. Applying embedding where data is co-located, referencing where data is shared, and following the ESR rule for compound indexes produced a database structure that is both logically organized and measurably performant.
-
-### Results Achieved
-
-✓ **Schema Design:** Four-collection model with strategic embedding and referencing  
-✓ **Aggregation Pipelines:** Four complex analytics queries demonstrating `$match`, `$group`, `$lookup`, `$project`, `$sort`  
-✓ **Indexing Strategy:** Five indexes following ESR principle and access patterns  
-✓ **Performance Verification:** Quantified 100x+ performance improvements with `explain()`  
-✓ **Real-World Patterns:** Attribute Pattern, embedding for co-located data, referencing for shared entities  
-
-This practical provides a production-ready foundation for an e-commerce backend on MongoDB, demonstrating both the theoretical principles and hands-on optimization techniques essential for modern database engineering.
-
----
-
-**Date:** April 26, 2026  
-**Environment:** MongoDB Atlas (Cloud)  
-**Database:** ecommerce  
-**Collections:** 4 (users, products, categories, orders)  
-**Indexes:** 5  
-**Languages:** JavaScript (mongosh)
