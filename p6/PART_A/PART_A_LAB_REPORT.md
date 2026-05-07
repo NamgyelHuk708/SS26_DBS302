@@ -38,10 +38,6 @@ The environment was Ubuntu with Redis 7.x installed. I had openssl available for
 
 First thing I did was check if Redis was even installed and working. Ran `redis-server --version` and got back v7.x. Good sign. The service was already running according to `systemctl status redis-server`. That made things easier—no installation needed.
 
-Image 1:
-
-![Redis Version Check](A_image/1.png)
-
 ---
 
 ## 4. BACKING UP AND CONFIGURING ACL USERS
@@ -437,8 +433,4 @@ Original config backup: `/etc/redis/redis.conf.backup`
 Python demo script: `~/redis_secure_demo.py`
 
 ---
-
-**Report Date:** May 4, 2026  
-**All Screenshots Captured:** 13 images  
-**Test Status:** All passed successfully
 
